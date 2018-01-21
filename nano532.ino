@@ -144,7 +144,7 @@ void readAck(int x) //read x byte from serial
 void UART_Send_Byte(unsigned char command_data)  //Send the command in a fixed format
 {
   Serial.write(command_data);
-  Serial.flush();// complete the transmission of outgoing serial data 
+  Serial.flush();//complete the transmission of outgoing serial data 
 } 
 
 char checkDCS(int x)  //DCS verification function
